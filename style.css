@@ -241,6 +241,45 @@ a {
     font-size: 16px;
 }
 
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .cleaning-services {
+        padding: 30px;
+    }
+
+    .cleaning-services h2 {
+        font-size: 28px;
+    }
+
+    .cleaning-services p {
+        font-size: 16px;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 80%; /* Imposta la larghezza per occupare più spazio su schermi più piccoli */
+        margin-bottom: 20px;
+    }
+
+    .service-card img {
+        width: 100%; /* Mantieni l'immagine responsive */
+        height: auto;
+    }
+
+    .service-card h3 {
+        font-size: 20px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+    }
+}
+
+
 /* Airbnb Details Section */
 .airbnb-details {
     background-color: white;
