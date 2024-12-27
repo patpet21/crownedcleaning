@@ -123,3 +123,110 @@ a {
 .contact-details p {
     margin: 10px 0;
 }
+
+.info-section {
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-image {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.info-text {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.info-text h2, .info-text h3 {
+    color: #006699;
+    margin-top: 20px;
+}
+
+.info-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.book-now-btn, .contact-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-btn {
+    background-color: #007bff;
+}
+
+.book-now-btn:hover {
+    background-color: #218838;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+.icon-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.icon-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.icon p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .info-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-image, .info-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .icon-content {
+        flex-direction: column;
+    }
+}
