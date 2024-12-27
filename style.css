@@ -909,3 +909,48 @@ a {
 .footer-service-category li:hover {
     color: #32cd32;
 }
+
+
+/* Stili per il Modulo di Prenotazione */
+.booking-section {
+    background-color: #f9f9f9; /* Colore di sfondo chiaro */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto; /* Centra il modulo */
+}
+
+.booking-form label {
+    font-size: 16px;
+    text-align: left;
+}
+
+.booking-form input, 
+.booking-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.booking-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.booking-form button:hover {
+    background-color: #218838;
+}
