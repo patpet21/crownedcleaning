@@ -1,151 +1,146 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crowned Cleaning Services NJ</title>
+    <title>Book Your Cleaning Service</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar -->
-<nav class="navbar">
-    <div class="logo">
-        <img src="https://i.ibb.co/vjxFnBs/DALL-E-2024-10-15-19-01-58-A-vibrant-and-colorful-3-D-logo-without-any-text-for-a-cleaning-company-T.webp" alt="Crowned Cleaning Services Logo">
-    </div>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cleaning-services.html">Cleaning Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="airbnb-cleaning.html">Airbnb Cleaning</a></li>
-        <li><a href="booking.html">BOOKING NOW</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="book-btn">
-        <button>Book a Cleaner</button>
-        
-    </div>
-</nav>
-
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://i.ibb.co/vjxFnBs/DALL-E-2024-10-15-19-01-58-A-vibrant-and-colorful-3-D-logo-without-any-text-for-a-cleaning-company-T.webp" alt="Crowned Cleaning Services Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cleaning-services.html">Cleaning Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="airbnb-cleaning.html">Airbnb Cleaning</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="book-btn">
+            <a href="booking.html"><button>Book a Cleaner</button></a>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-<header class="hero-section" style="background-image: url(https://i.ibb.co/Hn12YFj/DALL-E-2024-10-15-17-49-02-A-bright-and-clean-modern-home-interior-for-a-cleaning-service-business-T.webp);">
-    <div class="header-content">
-        <h1>Professional Home Cleaning & Office Cleaning Service in NJ.</h1>
-        <p>Reliable, trustworthy, and affordable cleaning services for homes and offices.</p>
-    
-        <div class="buttons">
-            <button>Residential Cleaning</button>
-            <button>Commercial Cleaning</button>
+    <header class="hero-section" style="background-image: url(https://i.ibb.co/Hn12YFj/DALL-E-2024-10-15-17-49-02-A-bright-and-clean-modern-home-interior-for-a-cleaning-service-business-T.webp);">
+        <div class="header-content">
+            <h1>Book Your Professional Cleaning Service</h1>
+            <p>Schedule your cleaning in just 60 seconds</p>
         </div>
-        <p class="discount">10% Discount for all first-time customers</p>
-    </div>
-</header>
+    </header>
 
-<!-- Booking Section -->
-<section class="booking-section">
-    <div class="booking-container">
-        <div class="booking-header">
-            <h2>Book Your Professional Cleaning Service</h2>
-            <p>Complete your booking in just 60 seconds</p>
-        </div>
-        
-        <form id="bookingForm" class="booking-form" action="submit_booking.php" method="POST">
-            <div class="form-group">
-                <label for="service-type">Select Service</label>
-                <select id="service-type" name="service_type" required>
-                    <option value="">Choose a service...</option>
-                    <option value="residential">Residential Cleaning</option>
-                    <option value="commercial">Commercial Cleaning</option>
-                    <option value="airbnb">Airbnb Cleaning</option>
-                    <option value="moveinout">Move In/Out Cleaning</option>
-                </select>
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <div class="booking-header">
+                <h2>Schedule Your Cleaning Service</h2>
+                <p>Tell us about your cleaning needs and we'll take care of the rest</p>
             </div>
-
-            <div class="form-row">
+            
+            <form id="bookingForm" class="booking-form">
                 <div class="form-group">
-                    <label for="date">Preferred Date</label>
-                    <input type="date" id="date" name="date" required min="" class="date-picker">
-                </div>
-
-                <div class="form-group">
-                    <label for="time">Preferred Time</label>
-                    <select id="time" name="time" required>
-                        <option value="">Select time...</option>
-                        <!-- Time slots will be populated via JavaScript -->
+                    <label for="service-type">Select Service</label>
+                    <select id="service-type" name="service_type" required>
+                        <option value="">Choose a service...</option>
+                        <option value="residential">Residential Cleaning</option>
+                        <option value="commercial">Commercial Cleaning</option>
+                        <option value="airbnb">Airbnb Cleaning</option>
+                        <option value="moveinout">Move In/Out Cleaning</option>
                     </select>
                 </div>
-            </div>
 
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="full_name" required>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required class="date-picker">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select time...</option>
+                            <!-- Time slots will be populated via JavaScript -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Special Instructions (Optional)</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Logo and Contact Information -->
+            <div class="footer-logo">
+                <img src="https://i.ibb.co/vjxFnBs/DALL-E-2024-10-15-19-01-58-A-vibrant-and-colorful-3-D-logo-without-any-text-for-a-cleaning-company-T.webp" alt="Crowned Cleaning Services Logo" class="footer-logo-img">
+                <button class="book-cleaner-btn">Book a Cleaner Today</button>
+            </div>
+            <!-- Services Offered -->
+            <div class="footer-services">
+                <div class="footer-service-category">
+                    <h3>Residential Cleaning</h3>
+                    <ul>
+                        <li>Balcony Cleaning</li>
+                        <li>Basement Cleaning</li>
+                        <li>Spot Cleaning</li>
+                        <li>Wall Cleaning</li>
+                        <li>Window Cleaning</li>
+                    </ul>
+                </div>
+                <div class="footer-service-category">
+                    <h3>Commercial Cleaning</h3>
+                    <ul>
+                        <li>Break Room Cleaning</li>
+                        <li>Office Cleaning</li>
+                        <li>Restroom Cleaning</li>
+                        <li>Commercial Kitchen Cleaning</li>
+                        <li>Dish Washing Service</li>
+                    </ul>
+                </div>
+                <div class="footer-service-category">
+                    <h3>Professional Cleaning</h3>
+                    <ul>
+                        <li>Airbnb Cleaning</li>
+                        <li>Deep Cleaning</li>
+                        <li>Apartment Cleaning</li>
+                        <li>Covid Cleaning</li>
+                        <li>Disinfecting Services</li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="notes">Special Instructions (Optional)</label>
-                <textarea id="notes" name="notes" rows="3"></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Book Now</button>
-        </form>
-    </div>
-</section> 
-
-<!-- Footer Section -->
-<footer class="footer-section">
-    <div class="footer-container">
-        <!-- Logo and Contact Information -->
-        <div class="footer-logo">
-            <img src="https://i.ibb.co/vjxFnBs/DALL-E-2024-10-15-19-01-58-A-vibrant-and-colorful-3-D-logo-without-any-text-for-a-cleaning-company-T.webp" alt="Crowned Cleaning Services NJ Logo" class="footer-logo-img">
-            <button class="book-cleaner-btn">Book a Cleaner Today</button>
         </div>
-        <!-- Services Offered -->
-        <div class="footer-services">
-            <div class="footer-service-category">
-                <h3>Residential Cleaning</h3>
-                <ul>
-                    <li>Balcony Cleaning</li>
-                    <li>Basement Cleaning</li>
-                    <li>Spot Cleaning</li>
-                    <li>Wall Cleaning</li>
-                    <li>Window Cleaning</li>
-                </ul>
-            </div>
-            <div class="footer-service-category">
-                <h3>Commercial Cleaning</h3>
-                <ul>
-                    <li>Break Room Cleaning</li>
-                    <li>Office Cleaning</li>
-                    <li>Restroom Cleaning</li>
-                    <li>Commercial Kitchen Cleaning</li>
-                    <li>Dish Washing Service</li>
-                </ul>
-            </div>
-            <div class="footer-service-category">
-                <h3>Professional Cleaning</h3>
-                <ul>
-                    <li>Airbnb Cleaning</li>
-                    <li>Deep Cleaning</li>
-                    <li>Apartment Cleaning</li>
-                    <li>Covid Cleaning</li>
-                    <li>Disinfecting Services</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+    <!-- Aggiungi lo script JavaScript -->
+    <script src="booking.js"></script>
+</body>
+</html>
