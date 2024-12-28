@@ -913,44 +913,98 @@ a {
 
 /* Stili per il Modulo di Prenotazione */
 .booking-section {
-    background-color: #f9f9f9; /* Colore di sfondo chiaro */
-    padding: 50px;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+
+.booking-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.booking-header {
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.booking-header h2 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .booking-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    margin: 0 auto; /* Centra il modulo */
+    gap: 20px;
 }
 
-.booking-form label {
-    font-size: 16px;
-    text-align: left;
+.form-row {
+    display: flex;
+    gap: 20px;
 }
 
-.booking-form input, 
-.booking-form select {
-    padding: 10px;
-    border: 1px solid #ccc;
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
 }
 
-.booking-form button {
+.submit-btn {
     background-color: #28a745;
     color: white;
-    padding: 15px;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
+    font-size: 18px;
     cursor: pointer;
-    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
-.booking-form button:hover {
+.submit-btn:hover {
     background-color: #218838;
+}
+
+.service-list {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.service-list li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+    line-height: 1.6;
+}
+
+.service-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.service-list strong {
+    color: #006699;
+    font-weight: 600;
 }
