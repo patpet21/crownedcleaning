@@ -57,7 +57,7 @@
         <div class="service-card">
             <h3>Residential Cleaning</h3>
             <img src="https://i.ibb.co/f0ckYmr/DALL-E-2025-01-13-18-43-45-A-professional-residential-cleaning-service-in-a-cozy-modern-home-A-clean.webp" alt="Residential Cleaning">
-            <p>Complete cleaning services tailored to your home, ensuring every corner is spotless.</p>
+            <p>Ensure your residence stays clean, comfortable, and welcoming every day.</p>
             <a href="cleaning-services.html" class="service-book-btn">Book Residential Cleaning</a>
         </div>
        
@@ -65,7 +65,7 @@
         <div class="service-card">
             <h3>Commercial Cleaning</h3>
             <img src="https://i.ibb.co/Sy3LZSY/DALL-E-2025-01-13-18-39-37-A-professional-commercial-cleaning-service-in-action-A-clean-and-modern-o.webp" alt="Airbnb Turnaround Cleaning">
-            <p>Ensure your property is clean and ready for the next guest.</p>
+            <p>Keep your workplace spotless and ready to impress clients and employees alike.</p>
             <a href="airbnb-cleaning.html" class="service-book-btn">Book Commercial Cleaning</a>
         </div>
 
@@ -73,7 +73,7 @@
         <div class="service-card">
             <h3>Homes Cleaning</h3>
             <img src="https://i.ibb.co/NNb8YTp/DALL-E-2025-01-13-18-45-53-A-professional-home-cleaning-service-in-action-A-well-maintained-suburban.webp" alt="Move In/Move Out Cleaning">
-            <p>Thorough cleaning services to prepare your space for moving in or out.</p>
+            <p>Make your home sparkle and feel fresh for you and your loved ones.</p>
             <a href="booking.html?service=moveinout" class="service-book-btn">Book Homes Cleaning</a>
         </div>
     </div>
@@ -202,104 +202,32 @@
             </div>
         </div>
         <div class="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.6117300195243!2d-74.01490998505822!3d40.7382569793297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af18e92ad9%3A0x6f2d5a32bd1152c5!2sCrowned%20Cleaning%20Services!5e0!3m2!1sen!2sus!4v1697387254502!5m2!1sen!2sus" 
-                width="600" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            
         </div>
     </div>
 </section>
 
-<!-- We're Hiring Section -->
-<section class="hiring-section">
-    <div class="hiring-content">
-        <h2>We're Hiring!</h2>
-        <p>Join the team at Crowned Cleaning Services NJ! We're looking for motivated, reliable individuals to join our cleaning crew. Fill out the form below to apply.</p>
-        
-        <form action="submit_hiring_form.php" method="POST" class="hiring-form">
-            <label for="full-name">Full Name:</label>
-            <input type="text" id="full-name" name="full_name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="experience">Experience in Cleaning Industry:</label>
-            <textarea id="experience" name="experience" rows="4" required></textarea>
-
-            <button type="submit">Submit Application</button>
-        </form>
-    </div>
-</section>
-
-<!-- Booking Section -->
+<!-- Call to Action for Booking -->
 <section class="booking-section">
     <div class="booking-container">
         <div class="booking-header">
             <h2>Schedule Your Cleaning Service</h2>
-            <p>Tell us about your cleaning needs and we'll take care of the rest</p>
+            <p>Tell us about your cleaning needs by clicking the button below.</p>
+            <a href="#link-to-booking-form" class="cta-button">Book Now</a>
         </div>
-        
-        <form id="bookingForm" class="booking-form">
-            <div class="form-group">
-                <label for="service-type">Select Service</label>
-                <select id="service-type" name="service_type" required>
-                    <option value="">Choose a service...</option>
-                    <option value="residential">Residential Cleaning</option>
-                    <option value="commercial">Commercial Cleaning</option>
-                    <option value="airbnb">Airbnb Cleaning</option>
-                    <option value="moveinout">Move In/Out Cleaning</option>
-                </select>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="date">Preferred Date</label>
-                    <input type="date" id="date" name="date" required class="date-picker">
-                </div>
-
-                <div class="form-group">
-                    <label for="time">Preferred Time</label>
-                    <select id="time" name="time" required>
-                        <option value="">Select time...</option>
-                        <!-- Time slots will be populated via JavaScript -->
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="full_name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="notes">Special Instructions (Optional)</label>
-                <textarea id="notes" name="notes" rows="3"></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Book Now</button>
-        </form>
     </div>
 </section>
 
+<!-- Call to Action for Hiring -->
+<section class="hiring-section">
+    <div class="hiring-content">
+        <h2>We're Hiring!</h2>
+        <p>Join the team at Crowned Cleaning Services NJ! Click the button below to apply.</p>
+        <a href="#link-to-hiring-form" class="cta-button">Apply Now</a>
+    </div>
+</section>
 <!-- Footer Section -->
 <footer class="footer-section">
     <div class="footer-container">
