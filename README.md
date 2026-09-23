@@ -4,18 +4,18 @@ Responsive static website for Cleaning Crowned in New Jersey.
 
 ## Pages
 - `index.html` — homepage, services, benefits, and calls to action.
-- `booking.html` — contact options for requesting a quote; external Formspace link to be added later.
+- `booking.html` — responsive quote request form that posts to the business's Formspree endpoint.
 - `about.html` — company information.
 - `contact.html` — verified contact methods and location (verify details before launch).
-- `thank-you.html` — unused legacy page; no form submission is configured.
+- `thank-you.html` — unused legacy page; Formspree controls the post-submit confirmation unless configured otherwise.
 - `style.css` — shared responsive design.
 - `site.js` — mobile navigation and service preselection.
 
 ## Launch checklist (important)
 1. Confirm that `(201) 759-8569`, `info@crownedcleaningnj.com`, and West New York are current company contact details. The old site contains a different Gmail address; avoid publishing an inbox the company does not monitor.
-2. Netlify is used for **hosting only**. The quote page does not submit a form; replace the temporary contact options with the Formspace link once supplied by the site owner.
+2. Netlify is used for **hosting only**. The quote form uses the supplied Formspree endpoint (`https://formspree.io/f/xbglyayz`). Confirm the form is active in Formspree and its notification email is set to the business's monitored inbox. Submit a real test request on the published site and confirm receipt; repository review alone does not validate delivery. The form is an estimate request, not an appointment booking.
 3. Confirm the services advertised and actual service ZIP codes with the business owner. Do not add testimonials, insurance/licensing claims, or discounts unless substantiated.
-4. Test mobile layout and navigation at 320, 375, 390, 768, and 1280 px, as well as phone/email links on the live staging URL.
+4. Test mobile layout and navigation at 320, 375, 390, 768, and 1280 px, as well as phone/email links, service preselection, and the Formspree submission on the live site.
 5. Replace illustrative externally hosted logo/photography with approved licensed assets and add a privacy notice for contact form submissions.
 
 The previous `booking.js` is legacy code and is no longer loaded by the redesigned pages. Its localStorage approach is **not** a working way to send bookings to the business.
