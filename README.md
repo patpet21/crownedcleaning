@@ -1,6 +1,6 @@
-# Crowned Cleaning Services NJ
+# Cleaning Crowned
 
-Responsive static website for Crowned Cleaning Services in New Jersey.
+Responsive static website for Cleaning Crowned in New Jersey.
 
 ## Pages
 - `index.html` — homepage, services, benefits, and calls to action.
